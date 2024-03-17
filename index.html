@@ -25,21 +25,21 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container">
+      <div class="container">
         <img
           src="./assets/logo colillas.svg"
           alt="Company logo"
           class="header__logo"
         />
         <div class="hero">
-          <h3 class="hero__title">
+          <h3 class="hero__title font-tinos">
             Lorem ipsum dolor sit amet consectetur. Elementum mauris tincidunt
             vitae ornare ultrices eget integer. Sagittis in ac fringilla sit.
           </h3>
-          <section class="hero__content">
+          <section class="font-dm-sans">
             <h5 class="hero__content__title">Lorem ipsum dolor sit amet</h5>
             <a href="#">
-              <div class="hero__content__link__container">
+              <div class="hero__content__link__container display-flex">
                 <p class="hero__content__link__container__content">
                   Lorem ipsum dolor sit amet consectetur. Nibh vestibulum
                   eleifend a et.
@@ -61,16 +61,18 @@
       </div>
     </header>
     <main>
-      <section class="team-section">
-        <div class="team-section__container">
+      <section class="advantages-section">
+        <div
+          class="advantages-section__container font-poppins container display-flex"
+        >
           <article>
             <img
               src="./assets/settings.svg"
               alt="Settings icon"
-              class="team-section__icon"
+              class="advantages-section__icon"
             />
-            <h3 class="team-section__title">Pauline</h3>
-            <p class="team-section__content">
+            <h3 class="advantages-section__title">Pauline</h3>
+            <p class="advantages-section__content">
               Lorem ipsum dolor sit amet consectetur. Eget enim quam quis
               commodo nisi. Blandit augue faucibus aliquam volutpat.
             </p>
@@ -79,10 +81,10 @@
             <img
               src="./assets/award.svg"
               alt="Award icon"
-              class="team-section__icon"
+              class="advantages-section__icon"
             />
-            <h3 class="team-section__title">Bailee</h3>
-            <p class="team-section__content">
+            <h3 class="advantages-section__title">Bailee</h3>
+            <p class="advantages-section__content">
               Lorem ipsum dolor sit amet consectetur. Quis nulla rhoncus iaculis
               ac. Sed pretium sapien condimentum odio nunc lectus.
             </p>
@@ -91,10 +93,10 @@
             <img
               src="./assets/rocket.svg"
               alt="Rocket icon"
-              class="team-section__icon"
+              class="advantages-section__icon"
             />
-            <h3 class="team-section__title">Henry</h3>
-            <p class="team-section__content">
+            <h3 class="advantages-section__title">Henry</h3>
+            <p class="advantages-section__content">
               Lorem ipsum dolor sit amet consectetur. Eu sed libero sed ultrices
               blandit enim at neque turpis. Turpis congue tempus at.
             </p>
@@ -103,10 +105,10 @@
             <img
               src="./assets/pen-tool.svg"
               alt="Pen tool icon"
-              class="team-section__icon"
+              class="advantages-section__icon"
             />
-            <h3 class="team-section__title">Laurence</h3>
-            <p class="team-section__content">
+            <h3 class="advantages-section__title">Laurence</h3>
+            <p class="advantages-section__content">
               Lorem ipsum dolor sit amet consectetur. Dignissim urna dui aliquam
               ut enim commodo nibh. Ornare amet semper sit.
             </p>
@@ -114,16 +116,20 @@
         </div>
       </section>
       <article class="article-about-us">
-        <div class="article-about-us__container">
+        <div
+          class="article-about-us__container display-flex container font-dm-sans"
+        >
           <div class="article-about-us__title-container">
-            <h2 class="article-about-us__title-container__title">
+            <h2 class="article-about-us__title-container__title font-tinos">
               Lorem ipsum dolor sit
             </h2>
             <h3 class="article-about-us__title-container__subtitle">
               Lorem ipsum dolor sit amet consectetur.
             </h3>
           </div>
-          <div class="article-about-us__content-container">
+          <div
+            class="article-about-us__content-container display-flex direction-column"
+          >
             <p>
               Lorem ipsum dolor sit amet consectetur. Erat neque viverra
               pharetra magna risus donec diam habitant molestie. Enim vestibulum
@@ -160,11 +166,15 @@
         </div>
       </article>
       <section class="section-enterprises">
-        <div class="section-enterprises__container">
-          <div class="section-enterprises__content">
-            <h4 class="section-enterprises__title">
+        <div
+          class="section-enterprises__container display-flex direction-column container"
+        >
+          <div
+            class="section-enterprises__content direction-column display-flex font-poppins"
+          >
+            <h3 class="section-enterprises__title">
               Figma ipsum component variant main layer.
-            </h4>
+            </h3>
             <div class="section-enterprises__star">
               <img src="./assets/star.svg" alt="Star icon" />
               <img src="./assets/star.svg" alt="Star icon" />
@@ -186,7 +196,7 @@
             </div>
           </div>
           <section class="section-enterprises__logo">
-            <div class="section-enterprises__logo__container">
+            <div class="section-enterprises__logo__container display-flex">
               <img src="./assets/Company logo.svg" alt="Layers Logo" />
               <img src="./assets/Company logo-1.svg" alt="Sisyphus Logo" />
               <img src="./assets/Company logo-2.svg" alt="Circooles Logo" />
@@ -197,8 +207,8 @@
         </div>
       </section>
       <section class="section-form">
-        <div class="section-form__container">
-          <div class="section-form__header">
+        <div class="section-form__container display-flex container">
+          <div class="font-poppins section-form__header">
             <h6 class="section-form__subtitle">
               Figma ipsum component variant main layer.
             </h6>
@@ -206,45 +216,79 @@
               Figma ipsum component variant main layer. Asset connection.
             </h3>
           </div>
-          <form action="" method="POST" id="form" class="section-form__content">
+          <form action="" method="" id="form" class="section-form__content">
             <div class="section-form__content__container">
               <div class="section-form__input__container">
                 <label class="section-form__label">
                   Nombre
-                  <input type="text" class="section-form__input" />
+                  <input
+                    type="text"
+                    class="section-form__input"
+                    id="name"
+                    required
+                  />
                 </label>
               </div>
               <div class="section-form__input__container">
                 <label class="section-form__label">
                   Empresa
-                  <input type="text" class="section-form__input" />
+                  <input
+                    type="text"
+                    class="section-form__input"
+                    id="enterprise"
+                    required
+                  />
                 </label>
               </div>
               <div class="section-form__input__container">
                 <label class="section-form__label">
                   Email
-                  <input type="text" class="section-form__input" />
+                  <input
+                    type="text"
+                    class="section-form__input"
+                    id="email"
+                    required
+                  />
                 </label>
               </div>
               <div class="section-form__input__container">
                 <label class="section-form__label">
                   Telefono de contacto
-                  <input type="text" class="section-form__input" />
+                  <input
+                    type="text"
+                    class="section-form__input"
+                    id="phone"
+                    required
+                  />
                 </label>
               </div>
               <div class="section-form__input__container--full-width">
                 <label class="section-form__label">
                   Mensaje
-                  <textarea class="section-form__input"></textarea>
+                  <textarea
+                    class="section-form__input"
+                    id="message"
+                    required
+                  ></textarea>
                 </label>
               </div>
               <div
-                class="section-form__input__container--full-width section-form__input__container--checkbox"
+                class="section-form__input__container--full-width section-form__input__container--checkbox display-flex"
               >
                 <input type="checkbox" name="" id="check" class="checkbox" />
-                <label class="section-form__label"> I accept the terms </label>
+                <label class="section-form__label">
+                  I accept the <span class="underline">Terms</span>
+                </label>
               </div>
-              <button type="submit">
+              <div
+                class="section-form__input__container--full-width section-form__label"
+              >
+                <p id="warnings" class="warnings"></p>
+              </div>
+              <button
+                type="submit"
+                class="section-form__button display-flex font-poppins"
+              >
                 Enviar
                 <img
                   src="./assets/arrow-white.svg"
@@ -257,21 +301,21 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__content">
-          <div class="footer__content__card">
-            <h5 class="footer__content__card_title">Fountainebleau</h5>
-            <div class="footer__content__card_content">
+    <footer class="footer font-dm-sans">
+      <div class="footer__container display-flex direction-column container">
+        <div class="footer__content display-flex">
+          <div class="footer__content__card display-flex direction-column">
+            <h5 class="footer__content__card__title">Fountainebleau</h5>
+            <div class="footer__content__card__content">
               <p>Cummerata Trail, 33</p>
               <p>08012 Marianfort</p>
               <p>(+34) 123 456 789</p>
             </div>
             <p class="footer__content__card_content">info@colillas.com</p>
           </div>
-          <div class="footer__content__card">
-            <h5 class="footer__content__card_title">Daly City</h5>
-            <div class="footer__content__card_content">
+          <div class="footer__content__card direction-column display-flex">
+            <h5 class="footer__content__card__title">Daly City</h5>
+            <div class="footer__content__card__content">
               <p>N Front Street, 85</p>
               <p>8895 Daly City</p>
               <p>(+34) 123 456 789</p>
@@ -279,14 +323,14 @@
             <p>hello@colillas.com</p>
           </div>
         </div>
-        <div class="footer__social-media">
+        <div class="footer__social-media display-flex">
           <img src="./assets/Facebook.svg" alt="Facebook logo" />
           <img src="./assets/X.svg" alt="X logo" />
           <img src="./assets/LinkedIn.svg" alt="LinkedIn logo" />
           <img src="./assets/Instagram.svg" alt="Instagram logo" />
           <img src="./assets/Youtube.svg" alt="Youtube logo" />
         </div>
-        <div class="footer__privacy-policy">
+        <div class="footer__privacy-policy display-flex">
           <a>© 2024 All rights reserved.</a>
           <a>Privacy Policy</a>
           <a>Terms of Service</a>
