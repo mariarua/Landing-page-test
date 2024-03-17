@@ -6,7 +6,7 @@
     <title>Colillas Branding</title>
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -15,11 +15,15 @@
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
     <link rel="icon" href="./assets/icon-colillas.svg" />
   </head>
@@ -36,27 +40,23 @@
             Lorem ipsum dolor sit amet consectetur. Elementum mauris tincidunt
             vitae ornare ultrices eget integer. Sagittis in ac fringilla sit.
           </h3>
-          <section class="font-dm-sans">
+          <div class="font-dm-sans">
             <h5 class="hero__content__title">Lorem ipsum dolor sit amet</h5>
-            <a href="#">
-              <div class="hero__content__link__container display-flex">
-                <p class="hero__content__link__container__content">
-                  Lorem ipsum dolor sit amet consectetur. Nibh vestibulum
-                  eleifend a et.
-                </p>
-                <img src="./assets/arrow.svg" alt="Arrow" />
-              </div>
+            <a href="#" class="hero__content__link__container display-flex">
+              <span class="hero__content__link__container__content"
+                >Lorem ipsum dolor sit amet consectetur. Nibh vestibulum
+                eleifend a et.</span
+              >
+              <img src="./assets/arrow.svg" alt="Arrow" />
             </a>
-            <a href="#">
-              <div class="hero__content__link__container">
-                <p class="hero__content__link__container__content">
-                  Lorem ipsum dolor sit amet consectetur. Amet sed vitae urna
-                  egestas amet.
-                </p>
-                <img src="./assets/arrow.svg" alt="Arrow" />
-              </div>
+            <a href="#" class="hero__content__link__container display-flex">
+              <span class="hero__content__link__container__content">
+                Lorem ipsum dolor sit amet consectetur. Amet sed vitae urna
+                egestas amet.
+              </span>
+              <img src="./assets/arrow.svg" alt="Arrow" />
             </a>
-          </section>
+          </div>
         </div>
       </div>
     </header>
@@ -115,20 +115,20 @@
           </article>
         </div>
       </section>
-      <article class="article-about-us">
-        <div
-          class="article-about-us__container display-flex container font-dm-sans"
+      <section class="about-us">
+        <article
+          class="about-us__container display-flex container font-dm-sans"
         >
-          <div class="article-about-us__title-container">
-            <h2 class="article-about-us__title-container__title font-tinos">
+          <div class="about-us__title-container">
+            <h2 class="about-us__title-container__title font-tinos">
               Lorem ipsum dolor sit
             </h2>
-            <h3 class="article-about-us__title-container__subtitle">
+            <h3 class="about-us__title-container__subtitle">
               Lorem ipsum dolor sit amet consectetur.
             </h3>
           </div>
           <div
-            class="article-about-us__content-container display-flex direction-column"
+            class="about-us__content-container display-flex direction-column"
           >
             <p>
               Lorem ipsum dolor sit amet consectetur. Erat neque viverra
@@ -163,137 +163,208 @@
               Egestas convallis integer sed turpis.
             </p>
           </div>
-        </div>
-      </article>
-      <section class="section-enterprises">
+        </article>
+      </section>
+      <section class="enterprises">
         <div
-          class="section-enterprises__container display-flex direction-column container"
+          class="enterprises__container display-flex direction-column container"
         >
-          <div
-            class="section-enterprises__content direction-column display-flex font-poppins"
-          >
-            <h3 class="section-enterprises__title">
-              Figma ipsum component variant main layer.
-            </h3>
-            <div class="section-enterprises__star">
-              <img src="./assets/star.svg" alt="Star icon" />
-              <img src="./assets/star.svg" alt="Star icon" />
-              <img src="./assets/star.svg" alt="Star icon" />
-              <img src="./assets/star.svg" alt="Star icon" />
-              <img src="./assets/star.svg" alt="Star icon" />
-            </div>
-            <p class="section-enterprises__paragraph">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus,
-              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-              libero vitae erat."
-            </p>
-            <div class="section-enterprises__review">
-              <h6 class="section-enterprises__review__name">Name Surname</h6>
-              <span class="section-enterprises__review__position"
-                >Position, Company name</span
+          <div class="slider-container">
+            <div class="slider">
+              <article
+                class="review direction-column display-flex font-poppins"
               >
+                <h3 class="enterprises__title">
+                  Figma ipsum component variant main layer.
+                </h3>
+                <div class="enterprises__star">
+                  <img src="./assets/star.svg" alt="Star icon" />
+                  <img src="./assets/star.svg" alt="Star icon" />
+                  <img src="./assets/star.svg" alt="Star icon" />
+                  <img src="./assets/star.svg" alt="Star icon" />
+                  <img src="./assets/star.svg" alt="Star icon" />
+                </div>
+                <p class="enterprises__paragraph">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique. Duis
+                  cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                  commodo diam libero vitae erat."
+                </p>
+                <div class="enterprises__review">
+                  <h6 class="enterprises__review__name">Name Surname</h6>
+                  <span class="enterprises__review__position"
+                    >Position, Company name</span
+                  >
+                </div>
+              </article>
+              <article
+                class="review direction-column display-flex font-poppins"
+              >
+                <h3 class="enterprises__title">
+                  2. Figma ipsum component variant main layer.
+                </h3>
+                <div class="enterprises__star">
+                  <img src="./assets/star.svg" alt="Star icon" />
+                  <img src="./assets/star.svg" alt="Star icon" />
+                  <img src="./assets/star.svg" alt="Star icon" />
+                  <img src="./assets/star.svg" alt="Star icon" />
+                  <img src="./assets/star.svg" alt="Star icon" />
+                </div>
+                <p class="enterprises__paragraph">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique. Duis
+                  cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                  commodo diam libero vitae erat."
+                </p>
+                <div class="enterprises__review">
+                  <h6 class="enterprises__review__name">Name Surname</h6>
+                  <span class="enterprises__review__position"
+                    >Position, Company name</span
+                  >
+                </div>
+              </article>
+              <article
+                class="review direction-column display-flex font-poppins"
+              >
+                <h3 class="enterprises__title">
+                  3. Figma ipsum component variant main layer.
+                </h3>
+                <div class="enterprises__star">
+                  <img src="./assets/star.svg" alt="Star icon" />
+                  <img src="./assets/star.svg" alt="Star icon" />
+                  <img src="./assets/star.svg" alt="Star icon" />
+                  <img src="./assets/star.svg" alt="Star icon" />
+                  <img src="./assets/star.svg" alt="Star icon" />
+                </div>
+                <p class="enterprises__paragraph">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique. Duis
+                  cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                  commodo diam libero vitae erat."
+                </p>
+                <div class="enterprises__review">
+                  <h6 class="enterprises__review__name">Name Surname</h6>
+                  <span class="enterprises__review__position"
+                    >Position, Company name</span
+                  >
+                </div>
+              </article>
             </div>
+            <button
+              id="sliderPrevButton"
+              class="slider__prev-button material-symbols-outlined"
+            >
+              arrow_back_ios
+            </button>
+            <button
+              id="sliderNextButton"
+              class="slider__next-button material-symbols-outlined"
+            >
+              arrow_forward_ios
+            </button>
           </div>
-          <section class="section-enterprises__logo">
-            <div class="section-enterprises__logo__container display-flex">
-              <img src="./assets/Company logo.svg" alt="Layers Logo" />
-              <img src="./assets/Company logo-1.svg" alt="Sisyphus Logo" />
-              <img src="./assets/Company logo-2.svg" alt="Circooles Logo" />
-              <img src="./assets/Company logo-3.svg" alt="Catalog Logo" />
-              <img src="./assets/Company logo-4.svg" alt="Quotient Logo" />
+          <section class="enterprises__logo">
+            <div class="enterprises__logo__container display-flex">
+              <img
+                src="./assets/Company logo.svg"
+                alt="Layers Logo"
+                class="enterprises__logo__img"
+              />
+              <img
+                src="./assets/Company logo-1.svg"
+                alt="Sisyphus Logo"
+                class="enterprises__logo__img"
+              />
+              <img
+                src="./assets/Company logo-2.svg"
+                alt="Circooles Logo"
+                class="enterprises__logo__img"
+              />
+              <img
+                src="./assets/Company logo-3.svg"
+                alt="Catalog Logo"
+                class="enterprises__logo__img"
+              />
+              <img
+                src="./assets/Company logo-4.svg"
+                alt="Quotient Logo"
+                class="enterprises__logo__img"
+              />
             </div>
           </section>
         </div>
       </section>
-      <section class="section-form">
-        <div class="section-form__container display-flex container">
-          <div class="font-poppins section-form__header">
-            <h6 class="section-form__subtitle">
+      <section class="form">
+        <div class="form__container display-flex container">
+          <div class="font-poppins form__header">
+            <h6 class="form__subtitle">
               Figma ipsum component variant main layer.
             </h6>
-            <h3 class="section-form__title">
+            <h3 class="form__title">
               Figma ipsum component variant main layer. Asset connection.
             </h3>
           </div>
-          <form action="" method="" id="form" class="section-form__content">
-            <div class="section-form__content__container">
-              <div class="section-form__input__container">
-                <label class="section-form__label">
+          <form action="" method="" id="form" class="form__content">
+            <div class="form__content__container">
+              <div class="form__input__container">
+                <label class="form__label">
                   Nombre
-                  <input
-                    type="text"
-                    class="section-form__input"
-                    id="name"
-                    required
-                  />
+                  <input type="text" class="form__input" id="name" required />
                 </label>
               </div>
-              <div class="section-form__input__container">
-                <label class="section-form__label">
+              <div class="form__input__container">
+                <label class="form__label">
                   Empresa
                   <input
                     type="text"
-                    class="section-form__input"
+                    class="form__input"
                     id="enterprise"
                     required
                   />
                 </label>
               </div>
-              <div class="section-form__input__container">
-                <label class="section-form__label">
+              <div class="form__input__container">
+                <label class="form__label">
                   Email
-                  <input
-                    type="text"
-                    class="section-form__input"
-                    id="email"
-                    required
-                  />
+                  <input type="text" class="form__input" id="email" required />
                 </label>
               </div>
-              <div class="section-form__input__container">
-                <label class="section-form__label">
+              <div class="form__input__container">
+                <label class="form__label">
                   Telefono de contacto
-                  <input
-                    type="text"
-                    class="section-form__input"
-                    id="phone"
-                    required
-                  />
+                  <input type="text" class="form__input" id="phone" required />
                 </label>
               </div>
-              <div class="section-form__input__container--full-width">
-                <label class="section-form__label">
+              <div class="form__input__container--full-width">
+                <label class="form__label">
                   Mensaje
                   <textarea
-                    class="section-form__input"
+                    class="form__input"
                     id="message"
                     required
                   ></textarea>
                 </label>
               </div>
               <div
-                class="section-form__input__container--full-width section-form__input__container--checkbox display-flex"
+                class="form__input__container--full-width form__input__container--checkbox display-flex"
               >
                 <input type="checkbox" name="" id="check" class="checkbox" />
-                <label class="section-form__label">
+                <label class="form__label">
                   I accept the <span class="underline">Terms</span>
                 </label>
               </div>
-              <div
-                class="section-form__input__container--full-width section-form__label"
-              >
+              <div class="form__input__container--full-width form__label">
                 <p id="warnings" class="warnings"></p>
               </div>
               <button
                 type="submit"
-                class="section-form__button display-flex font-poppins"
+                class="form__button display-flex font-poppins"
               >
                 Enviar
                 <img
                   src="./assets/arrow-white.svg"
                   alt="arrow"
-                  class="section-form__button__arrow"
+                  class="form__button__arrow"
                 />
               </button>
             </div>

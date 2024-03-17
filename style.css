@@ -6,6 +6,10 @@
   list-style: none;
 }
 
+html {
+  font-size: 100%;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -13,11 +17,11 @@ a {
 
 input,
 textarea {
+  display: block;
   background: none;
   color: #303536;
   font-size: 1.125rem;
   padding: 1rem;
-  display: block;
   width: 100%;
   border-radius: 1.875rem;
   border: 1px solid #aaaaaa;
@@ -44,6 +48,10 @@ textarea {
   font-family: "Tinos", serif;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .container {
   max-width: 90rem;
   margin: auto;
@@ -58,8 +66,8 @@ textarea {
 }
 
 .warnings {
-  font-size: 1rem;
   display: none;
+  font-size: 1rem;
 }
 
 .header {
@@ -72,21 +80,21 @@ textarea {
   width: 100%;
   min-height: 50rem;
   color: #303536;
+  padding: 5rem;
 }
 
 .header__logo {
-  margin: 5rem 0rem 5rem 5rem;
+  margin-bottom: 5rem;
 }
 
 .hero {
   width: 65%;
-  padding-left: 5rem;
   max-width: 90rem;
 }
 
 .hero__title {
-  font-size: 2.625rem;
-  line-height: 2.875rem;
+  font-size: clamp(1.8rem, 4vw, 2.625rem);
+  line-height: clamp(2rem, 5vw, 2.85rem);
   font-weight: 700;
   margin-bottom: 6.25rem;
 }
@@ -118,6 +126,7 @@ textarea {
 .advantages-section__container {
   padding: 4.7rem;
   gap: 1.875rem;
+  flex-wrap: nowrap;
 }
 
 .advantages-section__icon {
@@ -142,59 +151,52 @@ textarea {
   letter-spacing: 0.1px;
 }
 
-.article-about-us {
+.about-us {
   background-color: #303536;
   color: #e7e5e4;
 }
 
-.article-about-us__container {
+.about-us__container {
   padding: 5rem;
   gap: 2.5rem;
+  flex-wrap: nowrap;
 }
 
-.article-about-us__title-container {
-  width: 50%;
-}
-
-.article-about-us__content-container {
-  width: 50%;
-}
-
-.article-about-us__title-container__title {
+.about-us__title-container__title {
   font-weight: 700;
-  font-size: 4rem;
-  line-height: 4.375rem;
+  font-size: clamp(2.65rem, 4vw, 4rem);
+  line-height: clamp(2.85rem, 5vw, 4.375rem);
   padding-bottom: 0.625rem;
 }
 
-.article-about-us__title-container__subtitle {
+.about-us__title-container__subtitle {
   font-weight: 400;
-  font-size: 2rem;
-  line-height: 2.25rem;
+  font-size: clamp(1.6rem, 4vw, 2rem);
+  line-height: clamp(1.7rem, 5vw, 2.25rem);
 }
 
-.article-about-us__content-container {
+.about-us__content-container {
   gap: 1.25rem;
   font-size: 1rem;
   line-height: 1.25rem;
 }
 
-.section-enterprises {
+.enterprises {
   background-color: #f7f7f7;
 }
 
-.section-enterprises__container {
-  padding: 4.7rem;
+.enterprises__container {
+  padding: 4.7rem 8% 0px 8%;
   align-items: center;
   justify-content: center;
 }
 
-.section-enterprises__content {
+.enterprises__content {
   padding-inline: 9.375rem;
   align-items: center;
 }
 
-.section-enterprises__title {
+.enterprises__title {
   font-weight: 500;
   font-size: 2.25rem;
   line-height: 2.75rem;
@@ -202,11 +204,11 @@ textarea {
   padding-bottom: 5rem;
 }
 
-.section-enterprises__star {
+.enterprises__star {
   padding-bottom: 2rem;
 }
 
-.section-enterprises__paragraph {
+.enterprises__paragraph {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 2.375rem;
@@ -214,50 +216,57 @@ textarea {
   padding-bottom: 2rem;
 }
 
-.section-enterprises__review {
+.enterprises__review {
   text-align: center;
   padding-bottom: 5rem;
 }
 
-.section-enterprises__review__name {
+.enterprises__review__name {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.25rem;
   letter-spacing: 0.1px;
 }
 
-.section-enterprises__review__position {
+.enterprises__review__position {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: 0.1px;
 }
 
-.section-enterprises__logo {
+.enterprises__logo {
   width: 100%;
 }
-.section-enterprises__logo__container {
+
+.enterprises__logo__img {
+  width: 11rem;
+  padding: 1rem;
+}
+
+.enterprises__logo__container {
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-block: 4.7rem;
+  margin: auto;
+  padding-block: 2.5rem;
   border-top: 2px solid #e7e7e7;
 }
 
-.section-form__container {
+.form__container {
   padding: 4.7rem;
   gap: 1.5rem;
+  flex-wrap: nowrap;
 }
 
-.section-form__header {
+.form__header,
+.form__content,
+.about-us__title-container,
+.about-us__content-container {
   width: 50%;
 }
 
-.section-form__content {
-  width: 50%;
-}
-
-.section-form__subtitle {
+.form__subtitle {
   color: #f5333f;
   font-size: 1.25rem;
   line-height: 1.25rem;
@@ -267,28 +276,28 @@ textarea {
   padding-bottom: 0.625rem;
 }
 
-.section-form__title {
+.form__title {
   color: #1d1d1b;
   font-size: 2.25rem;
   line-height: 2.75rem;
   font-weight: 500;
 }
 
-.section-form__content__container {
-  width: 100%;
+.form__content__container {
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
-.section-form__label {
+.form__label {
   font-family: "Roboto";
   font-size: 1rem;
   line-height: 1.5rem;
   color: black;
 }
 
-.section-form__button {
+.form__button {
   background: #1d1d1b;
   border: none;
   width: 45%;
@@ -300,18 +309,19 @@ textarea {
   border-radius: 3.75rem;
   justify-content: space-evenly;
   align-items: center;
+  min-width: 8.75rem;
 }
 
-.section-form__input {
+.form__input {
   margin-top: 0.5rem;
 }
 
-.section-form__input__container--full-width {
+.form__input__container--full-width {
   grid-column: span 2;
   width: 100%;
 }
 
-.section-form__input__container--checkbox {
+.form__input__container--checkbox {
   gap: 0.5rem;
 }
 
@@ -320,11 +330,7 @@ textarea {
   height: 1.125rem;
 }
 
-.underline {
-  text-decoration: underline;
-}
-
-.section-form__button__arrow {
+.form__button__arrow {
   height: 1.125rem;
 }
 
@@ -345,6 +351,7 @@ textarea {
   margin-bottom: 3.125rem;
   justify-content: space-evenly;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .footer__content__card {
@@ -376,4 +383,107 @@ textarea {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.3rem;
+  flex-wrap: nowrap;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.review {
+  width: 100%;
+  flex: 0 0 auto;
+  padding: 0 5%;
+  text-align: center;
+}
+
+.slider__prev-button,
+.slider__next-button {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+  transform: translateY(-50%);
+  border-radius: 100%;
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: clamp(25px, 4vw, 50px);
+  height: clamp(25px, 4vw, 50px);
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__prev-button.material-symbols-outlined,
+.slider__next-button.material-symbols-outlined {
+  font-size: clamp(12px, 2vw, 24px);
+}
+
+.slider__prev-button {
+  left: 0;
+  padding-left: clamp(5px, 1vw, 10px);
+}
+
+.slider__next-button {
+  right: 0;
+  padding-left: 2px;
+}
+
+.slider-container:hover > .slider__prev-button,
+.slider-container:hover > .slider__next-button {
+  opacity: 100;
+}
+
+@media (max-width: 1280px) {
+  .hero__content__link__container__content {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 2rem;
+    min-height: 40rem;
+  }
+  .form__header,
+  .form__content,
+  .about-us__title-container,
+  .about-us__content-container,
+  .hero {
+    width: 100%;
+  }
+  .form__container,
+  .advantages-section__container,
+  .about-us__container {
+    flex-wrap: wrap;
+  }
+  .hero {
+    padding: 0;
+  }
+  .about-us__title-container__title {
+    font-size: 2.2rem;
+    line-height: 2rem;
+  }
+  .hero__content__link__container {
+    font-size: 1.2rem;
+  }
+  .form__input__container {
+    grid-column: span 2;
+  }
+  .footer__privacy-policy {
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+  }
 }

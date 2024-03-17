@@ -15,7 +15,6 @@ const expresiones = {
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-
   warningText.innerHTML = "";
 
   let warnings = "";
@@ -48,7 +47,10 @@ form.addEventListener("submit", (event) => {
   } else {
     warningText.innerHTML = "Enviado!";
     warningText.style.display = "block";
-    warningText.style.color = "#303536";
+    warningText.style.color = "#ffffff";
+    warningText.style.padding = "0.5rem";
+    warningText.style.backgroundColor = "#2c6823";
+    warningText.style.borderRadius = "5px";
 
     nameInput.value = "";
     enterpriseInput.value = "";
@@ -67,3 +69,37 @@ form.addEventListener("submit", (event) => {
     console.log("Nuevo usuario:", newUser);
   }
 });
+
+const slider = document.querySelector(".slider");
+const slides = document.querySelectorAll(".review");
+
+let sliderIndex = 0;
+let width = slides[0].offsetWidth;
+
+window.addEventListener("resize", (_event) => {
+  width = slides[0].offsetWidth;
+  slider.style.transform = `translateX(-${sliderIndex * width}px)`;
+});
+
+function nextReview() {
+  sliderIndex++;
+  if (sliderIndex >= slides.length) {
+    sliderIndex = 0;
+  }
+  slider.style.transform = `translateX(-${sliderIndex * width}px)`;
+}
+
+function prevReview() {
+  sliderIndex--;
+  if (sliderIndex < 0) {
+    sliderIndex = slides.length - 1;
+  }
+  slider.style.transform = `translateX(-${sliderIndex * width}px)`;
+}
+
+document
+  .getElementById("sliderPrevButton")
+  .addEventListener("click", prevReview);
+document
+  .getElementById("sliderNextButton")
+  .addEventListener("click", nextReview);
