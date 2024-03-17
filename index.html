@@ -206,8 +206,8 @@
               Figma ipsum component variant main layer. Asset connection.
             </h3>
           </div>
-          <form action="" method="POST" id="form">
-            <div class="section-form__content">
+          <form action="" method="POST" id="form" class="section-form__content">
+            <div class="section-form__content__container">
               <div class="section-form__input__container">
                 <label class="section-form__label">
                   Nombre
@@ -238,18 +238,62 @@
                   <textarea class="section-form__input"></textarea>
                 </label>
               </div>
-              <div class="section-form__input__container--full-width">
-                <label class="section-form__label">
-                  <input type="checkbox" name="" id="check" class="checkbox" />
-                  I accept the terms
-                </label>
+              <div
+                class="section-form__input__container--full-width section-form__input__container--checkbox"
+              >
+                <input type="checkbox" name="" id="check" class="checkbox" />
+                <label class="section-form__label"> I accept the terms </label>
               </div>
-              <button type="submit">Enviar</button>
+              <button type="submit">
+                Enviar
+                <img
+                  src="./assets/arrow-white.svg"
+                  alt="arrow"
+                  class="section-form__button__arrow"
+                />
+              </button>
             </div>
           </form>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__content">
+          <div class="footer__content__card">
+            <h5 class="footer__content__card_title">Fountainebleau</h5>
+            <div class="footer__content__card_content">
+              <p>Cummerata Trail, 33</p>
+              <p>08012 Marianfort</p>
+              <p>(+34) 123 456 789</p>
+            </div>
+            <p class="footer__content__card_content">info@colillas.com</p>
+          </div>
+          <div class="footer__content__card">
+            <h5 class="footer__content__card_title">Daly City</h5>
+            <div class="footer__content__card_content">
+              <p>N Front Street, 85</p>
+              <p>8895 Daly City</p>
+              <p>(+34) 123 456 789</p>
+            </div>
+            <p>hello@colillas.com</p>
+          </div>
+        </div>
+        <div class="footer__social-media">
+          <img src="./assets/Facebook.svg" alt="Facebook logo" />
+          <img src="./assets/X.svg" alt="X logo" />
+          <img src="./assets/LinkedIn.svg" alt="LinkedIn logo" />
+          <img src="./assets/Instagram.svg" alt="Instagram logo" />
+          <img src="./assets/Youtube.svg" alt="Youtube logo" />
+        </div>
+        <div class="footer__privacy-policy">
+          <a>© 2024 All rights reserved.</a>
+          <a>Privacy Policy</a>
+          <a>Terms of Service</a>
+          <a>Cookies Settings</a>
+        </div>
+      </div>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
