@@ -221,3 +221,78 @@ a {
   padding-block: 75px;
   border-top: 2px solid #e7e7e7;
 }
+
+.section-form__container {
+  display: flex;
+  padding: 75px;
+  max-width: 1440px;
+  margin: auto;
+  gap: 25px;
+}
+
+.section-form__header {
+  width: 50%;
+}
+
+.section-form__content {
+  width: 50%;
+}
+
+.section-form__header {
+  font-family: "Poppins";
+}
+
+.section-form__subtitle {
+  color: #f5333f;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 10%;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.section-form__title {
+  color: #1d1d1b;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 500;
+}
+
+.section-form__content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.section-form__input__container {
+}
+
+.section-form__label {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+}
+
+input,
+textarea {
+  background: none;
+  color: #c6c6c6;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border-radius: 30px;
+  border: 1px solid #aaaaaa;
+}
+
+.section-form__input {
+  margin-top: 8px;
+}
+
+.section-form__input__container--full-width {
+  grid-column: span 2;
+  width: 100%;
+}

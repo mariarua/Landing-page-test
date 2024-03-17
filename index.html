@@ -17,6 +17,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="./assets/icon-colillas.svg" />
   </head>
   <body>
@@ -192,40 +196,57 @@
           </section>
         </div>
       </section>
-      <section>
-        <div>
-          <div>
-            <h6>Figma ipsum component variant main layer.</h6>
-            <h3>Figma ipsum component variant main layer. Asset connection.</h3>
+      <section class="section-form">
+        <div class="section-form__container">
+          <div class="section-form__header">
+            <h6 class="section-form__subtitle">
+              Figma ipsum component variant main layer.
+            </h6>
+            <h3 class="section-form__title">
+              Figma ipsum component variant main layer. Asset connection.
+            </h3>
           </div>
-          <div>
-            <form>
-              <label>
-                Nombre
-                <input type="text" />
-              </label>
-              <label>
-                Empresa
-                <input type="text" />
-              </label>
-              <label>
-                Email
-                <input type="text" />
-              </label>
-              <label>
-                Telefono de contacto
-                <input type="text" />
-              </label>
-              <label>
-                Mensaje
-                <area type="text" />
-              </label>
-              <label>
-                <input type="text" />
-                I accept the terms
-              </label>
-            </form>
-          </div>
+          <form action="" method="POST" id="form">
+            <div class="section-form__content">
+              <div class="section-form__input__container">
+                <label class="section-form__label">
+                  Nombre
+                  <input type="text" class="section-form__input" />
+                </label>
+              </div>
+              <div class="section-form__input__container">
+                <label class="section-form__label">
+                  Empresa
+                  <input type="text" class="section-form__input" />
+                </label>
+              </div>
+              <div class="section-form__input__container">
+                <label class="section-form__label">
+                  Email
+                  <input type="text" class="section-form__input" />
+                </label>
+              </div>
+              <div class="section-form__input__container">
+                <label class="section-form__label">
+                  Telefono de contacto
+                  <input type="text" class="section-form__input" />
+                </label>
+              </div>
+              <div class="section-form__input__container--full-width">
+                <label class="section-form__label">
+                  Mensaje
+                  <textarea class="section-form__input"></textarea>
+                </label>
+              </div>
+              <div class="section-form__input__container--full-width">
+                <label class="section-form__label">
+                  <input type="checkbox" name="" id="check" class="checkbox" />
+                  I accept the terms
+                </label>
+              </div>
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
         </div>
       </section>
     </main>
