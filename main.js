@@ -52,13 +52,6 @@ form.addEventListener("submit", (event) => {
     warningText.style.backgroundColor = "#2c6823";
     warningText.style.borderRadius = "5px";
 
-    nameInput.value = "";
-    enterpriseInput.value = "";
-    emailInput.value = "";
-    phoneInput.value = "";
-    messageTextarea.value = "";
-    checkInput.checked = false;
-
     const newUser = {
       nombre: nameInput.value,
       empresa: enterpriseInput.value,
@@ -66,7 +59,22 @@ form.addEventListener("submit", (event) => {
       telefono: phoneInput.value,
       mensaje: messageTextarea.value,
     };
+
     console.log("Nuevo usuario:", newUser);
+    window.alert(`
+    Se ha enviado el mensaje, datos de contacto:
+    Nombre: ${newUser.nombre}
+    Empresa: ${newUser.empresa}
+    Email: ${newUser.email}
+    Telefono: ${newUser.telefono}
+    Mensaje: ${newUser.mensaje}`);
+
+    nameInput.value = "";
+    enterpriseInput.value = "";
+    emailInput.value = "";
+    phoneInput.value = "";
+    messageTextarea.value = "";
+    checkInput.checked = false;
   }
 });
 
